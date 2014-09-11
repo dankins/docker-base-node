@@ -1,10 +1,10 @@
-# Ghost
+# base node-js 
 #
 # VERSION               0.0.1
-# BUILD-USING:        docker build -t docker-base-node .
-# PUSH-USING:         docker tag docker-base-node surf/docker-base-node  && docker push surf/docker-base-node
+# BUILD-USING:        docker build -t base-node .
+# PUSH-USING:         docker tag base-node surf/base-node  && docker push surf/base-node
 
-FROM      surf/docker-base
+FROM      surf/base
 MAINTAINER Dan Kinsley <dan@surfbeta.com>
 
 # make sure the package repository is up to date
