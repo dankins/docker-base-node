@@ -13,5 +13,6 @@ RUN apt-get update && apt-get install -y \
 	npm 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-# Launch titan when launching the container
+RUN npm install express
+
 CMD ["/bin/bash"]
