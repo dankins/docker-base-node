@@ -1,10 +1,10 @@
 # Ghost
 #
 # VERSION               0.0.1
-# BUILD-USING:        docker build -t base-node .
-# PUSH-USING:         docker tag base-node surf/base-node  && docker push surf/base-node
+# BUILD-USING:        docker build -t docker-base-node .
+# PUSH-USING:         docker tag docker-base-node surf/docker-base-node  && docker push surf/docker-base-node
 
-FROM      surf/base
+FROM      surf/docker-base
 MAINTAINER Dan Kinsley <dan@queuenetwork.com>
 
 # make sure the package repository is up to date
